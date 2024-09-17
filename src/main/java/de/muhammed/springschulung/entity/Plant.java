@@ -4,9 +4,9 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.jpa.repository.JpaRepository;
+import lombok.ToString;
 
-@NoArgsConstructor @Getter @Setter
+@NoArgsConstructor @Getter @Setter @ToString
 @Entity
 @Table(name = "plant")
 public class Plant {
@@ -14,7 +14,9 @@ public class Plant {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    
+
+    @Column(name = "name")
+    private String name;
     
 }
 

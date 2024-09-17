@@ -1,0 +1,5 @@
+CREATE TABLE plant(
+    id BIGINT GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(64),
+    CONSTRAINT pk_plant PRIMARY KEY (id)
+);
