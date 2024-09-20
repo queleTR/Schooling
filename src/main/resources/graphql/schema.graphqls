@@ -1,0 +1,10 @@
+type Person {
+    id:Int
+    vorname:String
+    nachname: String
+}
+
+type Query {
+    person(count:Int, offset:Int):[Person]
+    personById(id:Int):Person
+}

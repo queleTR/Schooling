@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: Graphql_Kurs
+  graphql:
+    graphiql:
+      enabled: true
